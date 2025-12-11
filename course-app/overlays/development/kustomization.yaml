@@ -4,4 +4,5 @@ namespace: development
 resources:
   - ../../base
 patches:
+  - path: namespace.yaml
   - path: deployment.yaml

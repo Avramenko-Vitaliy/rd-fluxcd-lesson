@@ -19,7 +19,7 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 1m
   path: ./clusters/rd-cluster
   prune: true
   sourceRef:
@@ -32,7 +32,7 @@ metadata:
   name: app-dev
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 1m
   path: ./course-app/overlays/development
   prune: true
   targetNamespace: development
