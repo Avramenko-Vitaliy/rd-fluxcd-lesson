@@ -8,7 +8,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: dragonfly
+      chart: dragonfly-stack
       version: "*"
       sourceRef:
         kind: HelmRepository
