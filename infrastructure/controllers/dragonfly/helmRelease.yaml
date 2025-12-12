@@ -18,3 +18,5 @@ spec:
   values:
     redis:
       enabled: true
+    mysql:
+      enable: false
