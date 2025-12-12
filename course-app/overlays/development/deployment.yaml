@@ -7,6 +7,7 @@ spec:
   template:
     spec:
       containers:
-        - envFrom:
+        - name: course-app
+          envFrom:
             - configMapRef:
                 name: app-conf
