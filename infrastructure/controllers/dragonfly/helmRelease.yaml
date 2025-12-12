@@ -14,5 +14,6 @@ spec:
         kind: HelmRepository
         name: dragonfly
   values:
+    replicas: 2
     redis:
       enabled: true
