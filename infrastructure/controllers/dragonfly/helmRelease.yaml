@@ -8,12 +8,11 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: dragonfly-stack
+      chart: dragonfly
       version: "*"
       sourceRef:
         kind: HelmRepository
         name: dragonfly
   values:
-    replicas: 2
     redis:
-      enabled: true
+      enabled: false
