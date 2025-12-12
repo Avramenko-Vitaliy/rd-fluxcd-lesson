@@ -10,4 +10,4 @@ configMapGenerator:
   - name: app-conf
     literals:
       - APP_STORE="redis"
-      - APP_REDIS_URL="redis://redis:6379"
+      - APP_REDIS_URL="redis://dragonfly-dragonfly-redis-master.dragonfly.svc.cluster.local:6379"
