@@ -39,3 +39,17 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: app-prod
+  namespace: flux-system
+spec:
+  interval: 1m
+  path: ./course-app/overlays/production
+  prune: true
+  targetNamespace: production
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
