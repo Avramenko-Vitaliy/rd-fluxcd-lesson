@@ -1,0 +1,17 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: course-app
+spec:
+  minReplicas: 3
+  maxReplicas: 5
+  scaleTargetRef:
+    kind: Deployment
+    name: course-app
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
