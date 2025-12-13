@@ -2,6 +2,7 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
+  - dragonfly.yaml
 configMapGenerator:
   - name: app-conf
     literals:
