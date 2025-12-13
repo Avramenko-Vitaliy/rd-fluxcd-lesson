@@ -23,10 +23,7 @@ rc-prod:
 rc-fs:
 	flux reconcile ks flux-system
 
-rc-do:
-	flux reconcile hr dragonfly-operator
-
-rc: rc-dev rc-prod rc-fs rc-do
+rc: rc-dev rc-prod rc-fs
 
 prod-pods:
 	kubectl get pods -n $(PROD)

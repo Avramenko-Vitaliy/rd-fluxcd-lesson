@@ -6,6 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
+  targetNamespace: dragonfly-operator
   chart:
     spec:
       chart: dragonfly-operator
