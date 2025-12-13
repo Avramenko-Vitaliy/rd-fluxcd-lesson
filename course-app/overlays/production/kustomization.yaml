@@ -4,6 +4,7 @@ namespace: development
 resources:
   - namespace.yaml
   - ../../base
+  - autoscaler.yaml
 patches:
   - path: dragonfly.yaml
   - path: deployment.yaml
