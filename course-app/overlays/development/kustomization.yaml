@@ -4,11 +4,6 @@ namespace: development
 resources:
   - ../../base
   - namespace.yaml
-  - dragonfly.yaml
 patches:
   - path: deployment.yaml
-configMapGenerator:
-  - name: app-conf
-    literals:
-      - APP_STORE="redis"
-      - APP_REDIS_URL="redis://dragonfly-dragonfly-redis-master.dragonfly.svc.cluster.local:6379"
+  - path: dragonfly.yaml

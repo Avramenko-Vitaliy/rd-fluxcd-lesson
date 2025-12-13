@@ -6,6 +6,11 @@ spec:
   replicas: 3
   template:
     spec:
+      containers:
+        - name: course-app
+          envFrom:
+            - configMapRef:
+                name: app-conf
       resources:
         requests:
           cpu: 250m

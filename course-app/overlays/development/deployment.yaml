@@ -4,10 +4,10 @@ metadata:
   name: course-app
 spec:
   replicas: 1
-#  template:
-#    spec:
-#      containers:
-#        - name: course-app
-#          envFrom:
-#            - configMapRef:
-#                name: app-conf
+  template:
+    spec:
+      containers:
+        - name: course-app
+          envFrom:
+            - configMapRef:
+                name: app-conf
