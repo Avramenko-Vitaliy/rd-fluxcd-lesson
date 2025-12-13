@@ -6,5 +6,5 @@ resources:
 configMapGenerator:
   - name: app-conf
     literals:
-      - APP_STORE="redis"
-      - APP_REDIS_URL="redis://dragonfly:6379"
+      - APP_STORE=redis
+      - APP_REDIS_URL=redis://dragonfly:6379
